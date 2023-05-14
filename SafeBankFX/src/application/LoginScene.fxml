@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="800.0" minWidth="1500.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginSceneController">
+   <children>
+      <Label fx:id="lblBankName" alignment="CENTER" contentDisplay="CENTER" layoutX="650.0" layoutY="105.0" prefHeight="59.0" prefWidth="204.0" text="Safe Bank">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtEmailLogin" layoutX="590.0" layoutY="206.0" prefHeight="43.0" prefWidth="310.0" promptText="Email">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="txtPasswordLogin" layoutX="593.0" layoutY="277.0" prefHeight="43.0" prefWidth="310.0" promptText="Password">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="btnLogin" layoutX="693.0" layoutY="359.0" mnemonicParsing="false" onAction="#handleLoginAction" prefHeight="37.0" prefWidth="111.0" text="Login">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblSwitchToRegister" layoutX="623.0" layoutY="439.0" text="Don't have an account ? To Register, " />
+      <Hyperlink fx:id="hyperlinkToRegister" layoutX="821.0" layoutY="436.0" onAction="#handleSwitchToRegisterScene" prefHeight="23.0" prefWidth="66.0" text="Click Here" />
+      <Label fx:id="lblForgotPassword" layoutX="660.0" layoutY="477.0" text="Forgot your password ?" />
+      <Hyperlink fx:id="hyperlinkForgotPassword" layoutX="791.0" layoutY="474.0" onAction="#handleForgotPasswordAction" text="click here" />
+      <Label fx:id="lblForgotEmail" layoutX="672.0" layoutY="508.0" text="Forgot your email ?" />
+      <Hyperlink fx:id="hyperlinkForgotEmail" layoutX="776.0" layoutY="505.0" onAction="#handleForgotEmailAction" text="click here" />
+   </children>
+</AnchorPane>

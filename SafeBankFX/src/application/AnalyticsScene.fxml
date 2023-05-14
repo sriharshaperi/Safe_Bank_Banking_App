@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AnalyticsSceneController">
+   <children>
+      <AnchorPane layoutX="20.0" layoutY="20.0" minHeight="800.0" minWidth="1500.0" prefHeight="820.0" prefWidth="1520.0" style="-fx-border-radius: 20px;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="lblHome" alignment="CENTER" contentDisplay="CENTER" layoutX="426.0" layoutY="48.0" prefHeight="54.0" prefWidth="461.0" text="Welcome to Safe Bank Internet Banking">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnLogout" layoutX="1378.0" layoutY="50.0" mnemonicParsing="false" onAction="#handleLogoutAction" text="Logout" />
+            <Label fx:id="lblCurrentUserEmail" alignment="CENTER" contentDisplay="CENTER" layoutX="607.0" layoutY="135.0" prefHeight="30.0" prefWidth="324.0">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnGoBack" layoutX="1275.0" layoutY="50.0" mnemonicParsing="false" onAction="#invokeHomeSceneLayout" text="Go Back" />
+   </children>
+</AnchorPane>

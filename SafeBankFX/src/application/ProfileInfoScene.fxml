@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ProfileInfoSceneController">
+   <children>
+      <AnchorPane layoutX="-5.0" layoutY="1.0" minHeight="800.0" minWidth="1500.0" prefHeight="810.0" prefWidth="1510.0" style="-fx-border-radius: 20px;" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="-5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="1.0">
+         <children>
+            <Label fx:id="lblHome" alignment="CENTER" contentDisplay="CENTER" layoutX="549.0" layoutY="39.0" prefHeight="54.0" prefWidth="463.0" text="Welcome to Safe Bank Internet Banking">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnLogout" layoutX="1378.0" layoutY="50.0" mnemonicParsing="false" onAction="#handleLogoutAction" text="Logout">
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Button fx:id="btnGoBack" layoutX="1275.0" layoutY="50.0" mnemonicParsing="false" onAction="#invokeHomeSceneLayout" text="Go Back">
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Label fx:id="lblName" alignment="CENTER" contentDisplay="CENTER" layoutX="520.0" layoutY="150.0" prefHeight="18.0" prefWidth="53.0" text="Name">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtName" editable="false" layoutX="520.0" layoutY="180.0" prefHeight="47.0" prefWidth="529.0" promptText="Enter Name">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Label fx:id="lblEmail" alignment="CENTER" contentDisplay="CENTER" layoutX="520.0" layoutY="242.0" prefHeight="18.0" prefWidth="53.0" text="Email">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtEmail" editable="false" layoutX="520.0" layoutY="268.0" prefHeight="47.0" prefWidth="529.0" promptText="Enter Email">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </TextField>
+            <Label fx:id="lblPhone" alignment="CENTER" contentDisplay="CENTER" layoutX="517.0" layoutY="328.0" prefHeight="26.0" prefWidth="64.0" text="Phone">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtPhone" layoutX="520.0" layoutY="354.0" prefHeight="47.0" prefWidth="529.0" promptText="Enter Phone Number">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font size="20.0" />
+               </font></TextField>
+            <Button fx:id="btnChangePassword" layoutX="300.0" layoutY="264.0" mnemonicParsing="false" onAction="#handleChangePasswordAction" prefHeight="51.0" prefWidth="185.0" text="Change Password">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnChangeNumber" alignment="CENTER" layoutX="1076.0" layoutY="357.0" mnemonicParsing="false" onAction="#handleChangeNumberAction" text="Change Number">
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <AnchorPane fx:id="anchorPaneChangePassword" layoutX="541.0" layoutY="463.0" prefHeight="250.0" prefWidth="500.0" />
+            <Button fx:id="btnRequestCreditCardUpgrade" layoutX="213.0" layoutY="356.0" mnemonicParsing="false" onAction="#handleRequestCreditCardUpgradeAction" prefHeight="51.0" text="Request For New Credit Card">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnChangeName" layoutX="1076.0" layoutY="181.0" mnemonicParsing="false" onAction="#handleChangeNameAction" text="Change Name">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnViewCreditScore" layoutX="307.0" layoutY="176.0" mnemonicParsing="false" onAction="#handleViewCreditScoreAction" text="View Credit Score">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnNewSavingsAccount" layoutX="1076.0" layoutY="270.0" mnemonicParsing="false" onAction="#handleOpenNewSavingsAccountAction" text="Open New Savings Account">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TransferOtherAnchorPaneController">
+   <children>
+      <AnchorPane layoutX="-78.0" layoutY="-159.0" prefHeight="456.0" prefWidth="1085.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox layoutX="353.0" layoutY="46.0" prefHeight="34.0" prefWidth="349.0" />
+            <AnchorPane fx:id="anchorPane" layoutX="153.0" layoutY="89.0" prefHeight="300.0" prefWidth="780.0" />
+            <RadioButton fx:id="radioBtnBenifNew" layoutX="731.0" layoutY="44.0" mnemonicParsing="false" onAction="#handleBeneficiaryTransferOptions" text="Add New Beneficiary">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="beneficiaryTransferOptions" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="radioBtnBenifExist" layoutX="169.0" layoutY="44.0" mnemonicParsing="false" onAction="#handleBeneficiaryTransferOptions" selected="true" text="Transfer To Existing" toggleGroup="$beneficiaryTransferOptions">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </RadioButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

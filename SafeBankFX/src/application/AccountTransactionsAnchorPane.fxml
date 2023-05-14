@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane style="-fx-alignment: center;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AccountTransactionsAnchorPaneController">
+   <children>
+      <AnchorPane layoutX="-100.0" layoutY="-110.0" prefHeight="456.0" prefWidth="1085.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Pane fx:id="paneAccounts" layoutX="252.0" layoutY="252.0" prefHeight="560.0" prefWidth="1455.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ComboBox fx:id="cbAccounts" layoutX="587.0" layoutY="44.0" onAction="#displayAccounts" prefHeight="40.0" prefWidth="300.0" promptText="Choose Your Account" scaleShape="false" />
+            <Button fx:id="btnResetCBValue" layoutX="909.0" layoutY="45.0" mnemonicParsing="false" onAction="#clearSelectedValue" text="Reset">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <TableView fx:id="tblAccounts" layoutX="2.0" layoutY="194.0" prefHeight="352.0" prefWidth="1416.0">
+               <columns>
+                  <TableColumn fx:id="tblClmTID" prefWidth="218.65203857421875" text="Transaction ID" />
+                  <TableColumn fx:id="tblClmAccNo" prefWidth="155.833740234375" text="Account Number" />
+                  <TableColumn fx:id="tblClmTName" prefWidth="161.16629028320312" text="Transaction Name" />
+                  <TableColumn fx:id="tblClmTType" prefWidth="136.66741943359375" text="Transaction Type" />
+                  <TableColumn fx:id="tblClmTDate" prefWidth="533.4826049804688" text="Transaction Date" />
+                  <TableColumn fx:id="tblClmAmt" prefWidth="202.5174560546875" text="Amount" />
+               </columns>
+            </TableView>
+            <TextField fx:id="txtAccountBalance" alignment="CENTER" layoutX="627.0" layoutY="126.0" promptText="Account Balance">
+               <font>
+                  <Font size="20.0" />
+               </font></TextField>
+            <Label fx:id="lblAcctBalance" layoutX="680.0" layoutY="97.0" text="Account Balance">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

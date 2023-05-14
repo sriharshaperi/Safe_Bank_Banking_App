@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CCBillPayAnchorPaneController">
+   <children>
+      <AnchorPane layoutY="-4.0" prefHeight="456.0" prefWidth="1085.0" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-4.0">
+         <children>
+            <ComboBox fx:id="cbAccounts" layoutX="410.0" layoutY="78.0" onAction="#displayAccounts" prefHeight="40.0" prefWidth="280.0" promptText="Choose Your Account Number" />
+            <Button fx:id="btnReset" layoutX="700.0" layoutY="79.0" mnemonicParsing="false" onAction="#handleReset" prefHeight="38.0" text="Reset">
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <RadioButton fx:id="radioBtnFull" layoutX="454.0" layoutY="160.0" mnemonicParsing="false" onAction="#handleChangeAmountLimit" selected="true" text="Pay Full Amount">
+               <toggleGroup>
+                  <ToggleGroup fx:id="ChangeAmountLimit" />
+               </toggleGroup>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="radioBtnMin" layoutX="453.0" layoutY="215.0" mnemonicParsing="false" onAction="#handleChangeAmountLimit" text="Pay Minimum Amount" toggleGroup="$ChangeAmountLimit">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="radioBtnCustom" layoutX="454.0" layoutY="275.0" mnemonicParsing="false" onAction="#handleChangeAmountLimit" prefHeight="27.0" prefWidth="226.0" text="Pay Custom Amount" toggleGroup="$ChangeAmountLimit">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </RadioButton>
+            <TextField fx:id="txtAmount" layoutX="432.0" layoutY="327.0" prefHeight="40.0" prefWidth="270.0" promptText="Enter Amount">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Button fx:id="btnCCBillPay" layoutX="468.0" layoutY="386.0" mnemonicParsing="false" onAction="#handleCCBillPayAction" prefHeight="39.0" prefWidth="205.0" text="Pay Credit Card Bill">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
