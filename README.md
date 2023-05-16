@@ -8,18 +8,27 @@ Safe Bank Internet Banking is a secure Internet banking application that aims to
 2. Run the java project
 3. Provide a valid email for registration as the further step requires email verification
 
+# Features
+
+The implementation of Safe Bank Internet Banking includes various functionalities and features. It covers user authentication, profile information management, credit score calculation, credit card bill payment, account transactions and credit card payment transaction, beneficiary and self transfer transaction, reports and analytics.
+
 # Implementation Details
 
 The implementation of Safe Bank Internet Banking follows a layered application architecture. It involves several classes and interfaces from different packages. Here's a brief overview of the implementation details:
 
-**Backend Services:** The backend services are integrated into the event handlers in the JavaFX UI. These services make use of classes and methods defined in the services and DAO (Data Access Object) packages. The DAO classes implement CRUD (Create, Read, Update, Delete) operations and interact with the database using a DatabaseConnectionFactory class.
-**Validation Middleware:** Before processing any service, a validation middleware from the validations package is used to ensure that valid input is provided for transactions.
-Models and Database Schemas: Several models are implemented as blueprints for the database schemas, making it easier to add, update, and retrieve data from the database.
-**Java Collection Framework:** The Java Collection Framework, including classes like List, Stack, Map, and Set, is primarily used for data structures in the validation logic and business logic of the application.
-**Java Streams API:** The Java Streams API is used for streaming data collections and performing mapping and filtering operations to simplify processes.
-**JavaFX UI:** The UI consists of .fxml files and their respective Controller files. The main features are represented by files ending with Scene.fxml, while sub-features rendered inside nested components are represented by files ending with AnchorPane.fxml.
-Problem Description and Analysis
-The project aims to provide a seamless and secure banking experience for users. It includes features such as email verification, OTP (One-Time Password) verification, credit score calculation, account transactions, payments, and transfers. The security measures implemented in this application were inspired by real-time banking websites.
+1. **Backend Services:** The backend services are integrated into the event handlers in the JavaFX UI. These services make use of classes and methods defined in the services and DAO (Data Access Object) packages. The DAO classes implement CRUD (Create, Read, Update, Delete) operations and interact with the database using a DatabaseConnectionFactory class.
+
+2. **Validation Middleware:** Before processing any service, a validation middleware from the validations package is used to ensure that valid input is provided for transactions.
+   Models and Database Schemas: Several models are implemented as blueprints for the database schemas, making it easier to add, update, and retrieve data from the database.
+
+3. **Java Collection Framework:** The Java Collection Framework, including classes like List, Stack, Map, and Set, is primarily used for data structures in the validation logic and business logic of the application.
+
+4. **Java Streams API:** The Java Streams API is used for streaming data collections and performing mapping and filtering operations to simplify processes.
+
+5. **JavaFX UI:** The UI consists of .fxml files and their respective Controller files. The main features are represented by files ending with Scene.fxml, while sub-features rendered inside nested components are represented by files ending with AnchorPane.fxml.
+   Problem Description and Analysis
+
+6. The project aims to provide a seamless and secure banking experience for users. It includes features such as email verification, OTP (One-Time Password) verification, credit score calculation, account transactions, payments, and transfers. The security measures implemented in this application were inspired by real-time banking websites.
 
 # System Design
 
@@ -48,10 +57,6 @@ The system design of Safe Bank Internet Banking includes both the UI design and 
 The backend design ensures separation of concerns, modularity, and reusability. Each layer has clear responsibilities, and dependencies are managed appropriately to maintain a loosely coupled architecture.
 
 Overall, the system design of Safe Bank Internet Banking combines an intuitive UI design with a well-structured backend architecture. This ensures a seamless and secure banking experience for users while facilitating future enhancements and maintenance.
-
-# Implementation
-
-The implementation of Safe Bank Internet Banking includes various functionalities and features. It covers user authentication, profile information management, credit score calculation, credit card requests, account transactions, payments, and transfers. Detailed information about each feature can be found in the report.
 
 # Evaluation
 
