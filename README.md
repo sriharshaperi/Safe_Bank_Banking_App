@@ -1,3 +1,5 @@
+Note : The 2nd version of this project is being developed using Spring Boot, Spring Data JPA, Apache Kafka and will be deployed on AWS Lambda
+
 # Safe Bank Internet Banking
 
 Safe Bank Internet Banking is a secure Internet banking application that aims to provide a convenient and secure banking experience for both banks and customers. This JavaFX project offers multiple banking services on a single platform and ensures the security of customer data by preventing fraudulent or unauthorized access.
